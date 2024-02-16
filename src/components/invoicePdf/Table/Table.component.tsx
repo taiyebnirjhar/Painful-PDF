@@ -19,9 +19,9 @@ const styles = StyleSheet.create({
     display: "flex",
   },
   tableCell: {
-    alignSelf: "center",
-    alignItems: "center",
-    marginTop: 14,
+    // alignSelf: "center",
+    // alignItems: "center",
+    // marginTop: 14,
     fontSize: 8,
     textAlign: "center",
     padding: "4px 2px",
