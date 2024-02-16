@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   tableContainer: {
-    marginTop: 32,
+    marginTop: 8,
   },
 });
 

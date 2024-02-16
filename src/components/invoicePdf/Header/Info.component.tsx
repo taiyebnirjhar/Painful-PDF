@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     gap: 98,
   },
   customerDetails: {
-    alignSelf: "center",
+    alignSelf: "flex-start",
     paddingRight: 20,
     fontSize: 9,
 

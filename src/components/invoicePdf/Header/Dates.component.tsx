@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
 });
 
 const Dates = () => (
-  <View style={{ marginTop: -5 }}>
+  <View style={{ marginTop: -25, width: 300 }}>
     <View style={styles.section}>
       <Text>ORDER DATE:</Text>
       <Text>{new Date().toDateString()}</Text>

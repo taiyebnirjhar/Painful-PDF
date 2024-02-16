@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   tableCell: {
     alignSelf: "center",
     alignItems: "center",
-    marginTop: 5,
+    marginTop: 14,
     fontSize: 8,
     textAlign: "center",
     padding: "4px 2px",
