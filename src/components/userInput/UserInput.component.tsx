@@ -22,7 +22,7 @@ export default function UserInput({ sampleData, setSampleData }) {
   };
 
   return (
-    <form className="max-w-lg mx-auto" onSubmit={handleSubmit}>
+    <form className="w-[90%] max-w-lg mx-auto" onSubmit={handleSubmit}>
       <label
         htmlFor="DataCount"
         className="mb-2 text-sm font-medium text-gray-900 sr-only "

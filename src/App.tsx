@@ -62,7 +62,7 @@ export default function App() {
           </PDFDownloadLink>
         </div>
       </div>
-      <div>
+      <div className="hidden md:block">
         <PDFViewer style={{ height: "100vh", width: "100%" }}>
           <InvoicePdf tableData={sampleData} />
         </PDFViewer>
