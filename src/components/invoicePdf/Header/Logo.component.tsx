@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 const Logo = () => (
   <View style={styles.container}>
     <View style={styles.imageContainer}>
-      <Image src={"/public/assets/B_Moto.png"} style={styles.image} />
+      <Image src={"/assets/B_Moto.png"} style={styles.image} />
     </View>
   </View>
 );

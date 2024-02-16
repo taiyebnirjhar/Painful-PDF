@@ -16,11 +16,15 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderLeftWidth: 0,
     borderTopWidth: 0,
+    display: "flex",
   },
   tableCell: {
+    alignSelf: "center",
+    alignItems: "center",
     marginTop: 5,
     fontSize: 8,
     textAlign: "center",
+    padding: "4px 2px",
   },
 });
 

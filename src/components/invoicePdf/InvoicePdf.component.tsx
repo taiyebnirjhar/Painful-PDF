@@ -29,13 +29,13 @@ export default function InvoicePdf({ tableData }) {
 
   let pageCount = 0;
 
-  const divider = 10;
+  const divider = 8;
 
   const quotient = Math.floor(len / divider);
 
   const remainder = len % divider;
 
-  if (remainder > 0 && remainder < 10) {
+  if (remainder > 0 && remainder < 8) {
     pageCount = quotient + 1;
   } else if (remainder == 0) {
     pageCount = quotient;
@@ -50,7 +50,7 @@ export default function InvoicePdf({ tableData }) {
     counter++;
     arr.push(tableData[i]);
 
-    if (counter === 10) {
+    if (counter === 8) {
       if (pageArr.length < pageCount - 1) {
         const localArr = [...arr];
 
