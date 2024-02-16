@@ -62,8 +62,6 @@ export default function InvoicePdf({ tableData }) {
     }
   }
 
-  // console.log(arr.length);
-
   if (pageArr.length === pageCount - 1 && arr.length > 0) {
     const localArr = [];
     const anotherArr = [];
