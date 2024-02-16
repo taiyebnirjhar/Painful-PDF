@@ -1,7 +1,7 @@
 import Barcode from "react-barcode";
 
 export default function PdfDesign() {
-  const ref_no = "PS10000148";
+  // const ref_no = "PS10000148";
 
   const products = [
     {
