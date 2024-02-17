@@ -1,4 +1,4 @@
-import { Image, StyleSheet, View } from "@react-pdf/renderer";
+import { Image, StyleSheet, Text, View } from "@react-pdf/renderer";
 import JsBarcode from "jsbarcode";
 import React from "react";
 
@@ -6,11 +6,20 @@ import React from "react";
 const styles = StyleSheet.create({
   codeContainer: {
     display: "flex",
+    flexDirection: "column",
     justifyContent: "center",
+    alignItems: "center",
+  },
+  title: {
+    fontSize: 16,
+    marginBottom: 2,
+    fontFamily: "Roboto",
+    fontWeight: "medium",
+    textTransform: "uppercase",
   },
   codeImage: {
     width: 110,
-    height: 35,
+    height: 30,
   },
 });
 
@@ -33,6 +42,7 @@ const BarcodeImage = () => {
 
   return (
     <View style={styles.codeContainer}>
+      <Text style={styles.title}>Invoice - F13022401</Text>
       <Image src={barcodeDataUrl} style={styles.codeImage} />
     </View>
   );

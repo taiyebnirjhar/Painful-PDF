@@ -36,7 +36,7 @@ const Table = ({ tableData }) => {
       <View style={styles.table}>
         <View style={{ ...styles.tableRow, backgroundColor: "#c0c0c0" }} fixed>
           <View style={{ ...styles.tableCol, width: "11%" }}>
-            <Text style={styles.tableCell}>Sl No.</Text>
+            <Text style={styles.tableCell}>Tax Code</Text>
           </View>
           <View style={{ ...styles.tableCol, width: "34%" }}>
             <Text style={styles.tableCell}>Product Details</Text>
@@ -61,7 +61,7 @@ const Table = ({ tableData }) => {
           return (
             <View style={styles.tableRow} key={index}>
               <View style={{ ...styles.tableCol, width: "11%" }}>
-                <Text style={styles.tableCell}>{data.serialNo}</Text>
+                <Text style={styles.tableCell}>{data.taxCode}</Text>
               </View>
               <View style={{ ...styles.tableCol, width: "34%" }}>
                 <Text style={styles.tableCell}>{data.productDetails}</Text>

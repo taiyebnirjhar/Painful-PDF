@@ -38,14 +38,19 @@ const styles = StyleSheet.create({
     alignContent: "center",
   },
   customerGrid: {
+    display: "flex",
     flexDirection: "row",
-    width: "60%",
+    gap: 8,
+    marginBottom: 4,
+    width: "100%",
   },
   customerLabel: {
-    width: "30%",
     fontFamily: "Roboto",
-
     fontWeight: "medium",
+    width: "30%",
+  },
+  customerValue: {
+    width: 100,
   },
   companyNameContainer: {
     alignSelf: "flex-end",
@@ -87,20 +92,36 @@ const Info = () => (
     {/* customer details */}
     <View style={styles.customerDetails}>
       <View style={styles.customerGrid}>
+        <Text style={styles.customerLabel}>Company Name</Text>
+        <Text style={styles.customerValue}>: B- Moto</Text>
+      </View>
+      <View style={styles.customerGrid}>
         <Text style={styles.customerLabel}>Name</Text>
-        <Text>: Taiyeb Nirjhor</Text>
+        <Text style={styles.customerValue}>: B- Moto</Text>
+      </View>
+
+      <View style={styles.customerGrid}>
+        <Text style={styles.customerLabel}>SIREN</Text>
+        <Text style={styles.customerValue}>: 0000000000</Text>
       </View>
       <View style={styles.customerGrid}>
         <Text style={styles.customerLabel}>Tel</Text>
-        <Text>: 0000000000</Text>
+        <Text style={styles.customerValue}>: 0000000000</Text>
       </View>
       <View style={styles.customerGrid}>
         <Text style={styles.customerLabel}>Email</Text>
-        <Text>: xyz@gmail.com</Text>
+        <Text style={styles.customerValue}>: xyz@gmail.com</Text>
+      </View>
+      <View style={styles.customerGrid}>
+        <Text style={styles.customerLabel}>Address</Text>
+        <Text style={styles.customerValue}>
+          : 49 Aveneu Jean Jaures93300 Aubervilliers
+        </Text>
       </View>
       <Text
         style={{
-          marginTop: 10,
+          // marginTop: 4,
+          marginBottom: 4,
           fontFamily: "Roboto",
           fontWeight: "medium",
         }}
@@ -123,7 +144,7 @@ const Info = () => (
 
       <View style={styles.detailsGrid}>
         <Text style={styles.detailsLabel}>Email:</Text>
-        <Text style={styles.detailsLabel}>Tel: 07 83 20 96 97</Text>
+        <Text style={styles.detailsLabel}>Tel: 000000000000</Text>
       </View>
     </View>
   </View>
