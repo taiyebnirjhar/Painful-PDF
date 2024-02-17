@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
   container: {
     borderStyle: "solid",
     borderWidth: 1,
+
     borderColor: "black",
     fontSize: 12,
   },
