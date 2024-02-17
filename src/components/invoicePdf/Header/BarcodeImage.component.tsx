@@ -34,7 +34,7 @@ const BarcodeImage = () => {
 
   React.useEffect(() => {
     const fetchData = async () => {
-      const barcode = await generateBarcode("0000"); // Change "0000" to your desired data
+      const barcode = await generateBarcode("F13022401");
       setBarcodeDataUrl(barcode);
     };
     fetchData();
