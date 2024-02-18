@@ -89,9 +89,11 @@ export default function InvoicePdf({ sampleData }) {
 
   return (
     <Document>
-      {pageArr.map((item) => {
-        return item;
-      })}
+      <Document>
+        {pageArr.map((item) => {
+          return item;
+        })}
+      </Document>
     </Document>
   );
 }
