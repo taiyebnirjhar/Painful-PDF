@@ -1,7 +1,10 @@
 import { useState } from "react";
 import increaseData from "../../helper/increaseData";
+import { useAppContext } from "../../hooks/useAppContext.hooks";
 
-export default function UserInput({ sampleData, setSampleData }) {
+export default function UserInput() {
+  const { sampleData, setSampleData } = useAppContext();
+
   const [numToAdd, setNumToAdd] = useState(1);
 
   const handleSubmit = (e) => {

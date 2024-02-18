@@ -24,8 +24,10 @@ Font.register({
   ],
 });
 
-export default function InvoicePdf({ tableData }) {
-  const len = tableData.length;
+export default function InvoicePdf({ sampleData }) {
+  // const { sampleData } = useAppContext();
+
+  const len = sampleData.length;
 
   let pageCount = 0;
 
@@ -48,7 +50,7 @@ export default function InvoicePdf({ tableData }) {
 
   for (let i = 0; i < len; i++) {
     counter++;
-    arr.push(tableData[i]);
+    arr.push(sampleData[i]);
 
     if (counter === 8) {
       if (pageArr.length < pageCount - 1) {
