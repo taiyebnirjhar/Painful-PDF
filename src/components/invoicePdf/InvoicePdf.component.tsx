@@ -27,10 +27,6 @@ Font.register({
 export default function InvoicePdf({ sampleData }) {
   // const { sampleData } = useAppContext();
 
-  // const { counter: COUNTER } = useAppSelector((state) => state.counter);
-
-  // console.log(COUNTER);
-
   const len = sampleData.length;
 
   let pageCount = 0;

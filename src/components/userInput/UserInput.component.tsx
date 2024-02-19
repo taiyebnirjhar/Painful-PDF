@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import increaseData from "../../helper/increaseData";
 import { useAppContext } from "../../hooks/useAppContext.hooks";
 
@@ -23,6 +23,10 @@ export default function UserInput() {
       handleSubmit(e);
     }
   };
+
+  useEffect(() => {
+    console.log(sampleData);
+  }, [sampleData]);
 
   return (
     <form className="w-[90%] max-w-lg mx-auto" onSubmit={handleSubmit}>
